@@ -1,0 +1,30 @@
+// Runner 기법
+class Solution {
+    public boolean isPalindrome(ListNode head) {
+        ListNode fastNode = head, slowNode = head;
+        
+        while(fastNode != null) {
+            fastNode = fastNode.next != null ? fastNode.next.next : fastNode.next;
+            slowNode = slowNode.next;
+        }
+
+        ListNode revNode = null;
+        while(slowNode != null) {
+            ListNode nextNode = slowNode.next;
+            slowNode.next = revNode;
+            revNode = slowNode;
+            slowNode = nextNode;
+        }
+
+        while(revNode != null) {
+            if (head.val != revNode.val) {
+                return false;
+            }
+
+            head = head.next;
+            revNode = revNode.next;
+        }
+
+        return true;
+    }
+}

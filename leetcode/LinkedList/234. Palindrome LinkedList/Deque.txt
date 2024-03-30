@@ -1,0 +1,19 @@
+// Deque 접근법
+class Solution {
+    public boolean isPalindrome(ListNode head) {
+        Deque<Integer> deque = new LinkedList<>();
+
+        while(head != null) {
+            deque.push(head.val);
+            head = head.next;
+        }
+        
+        while(!deque.isEmpty() && deque.size() > 1) {
+            if (deque.pollFirst() != deque.pollLast()) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
