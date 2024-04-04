@@ -1,0 +1,16 @@
+// 반복문을 통한 구조 변경
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        ListNode node = head;
+        ListNode tail = null;
+
+        while(node != null) {
+            final ListNode nextNode = node.next;
+            node.next = tail;
+            tail = node;
+            node = nextNode;
+        }
+
+        return tail;
+    }
+}

@@ -1,0 +1,17 @@
+// 재귀 접근
+class Solution {
+    private ListNode reverse(ListNode node, ListNode tail) {
+        if (node == null) {
+            return tail;
+        }
+
+        final ListNode nextNode = node.next;
+        node.next = tail;
+
+        return reverse(nextNode, node);
+    }
+
+    public ListNode reverseList(ListNode head) {
+        return reverse(head, null);
+    }
+}
