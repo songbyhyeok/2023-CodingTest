@@ -1,6 +1,6 @@
 # 중복 문자 제거 - <a href="https://leetcode.com/problems/remove-duplicate-letters/" target="_blank">316. Remove Duplicate Letters</a>
 
-구성된 문자가 중복일 경우 사전 순으로, 아니라면 현재 위치로 두어 문자열  재구성하기
+구성된 문자가 중복일 경우 사전 순으로, 아니라면 현재 위치로 두어 문자열 재구성하기
 
 ### 풀이 과정
 **'bcabc'**  

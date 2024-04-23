@@ -1,4 +1,4 @@
-# 유효한 괄호 - <a href="https://leetcode.com/problems/implement-stack-using-queues/description/" target="_blank">225. Implement Stack using Queues</a>
+# 큐를 이용한 스택 구현 - <a href="https://leetcode.com/problems/implement-stack-using-queues/description/" target="_blank">225. Implement Stack using Queues</a>
 
 큐가 제공하는 연산자들을 활용해서 스택을 구현하기.
 
